@@ -17,12 +17,10 @@ mode        : selfcontained # {standalone, draft}
 
 
 
-
 ## General least squares for linear equations
 Consider again the parent and child height data from Galton
 
 <div class="rimage center"><img src="fig/unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" class="plot" /></div>
-
 
 ---
 ## Fitting the best line
@@ -168,7 +166,6 @@ rbind(c(beta0, beta1), coef(lm(y ~ x)))
 [2,]       23.94 0.6463
 ```
 
-
 ---
 ## Revisiting Galton's data
 ### Reversing the outcome/predictor relationship
@@ -184,7 +181,6 @@ rbind(c(beta0, beta1), coef(lm(x ~ y)))
 [1,]       46.14 0.3256
 [2,]       46.14 0.3256
 ```
-
 
 ---
 ## Revisiting Galton's data
@@ -202,7 +198,6 @@ c(beta1, coef(lm(y ~ x))[2])
 0.6463 0.6463 
 ```
 
-
 ---
 ## Revisiting Galton's data
 ### Normalizing variables results in the slope being the correlation
@@ -217,7 +212,6 @@ c(cor(y, x), cor(yn, xn), coef(lm(yn ~ xn))[2])
                   xn 
 0.4588 0.4588 0.4588 
 ```
-
 
 
 ---
@@ -246,4 +240,3 @@ points(mean(x), mean(y), cex = 2, pch = 19)
 
 ---
 <div class="rimage center"><img src="fig/unnamed-chunk-6.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" class="plot" /></div>
-

@@ -17,7 +17,6 @@ mode        : selfcontained # {standalone, draft}
 
 
 
-
 ## A historically famous idea, Regression to the Mean
 * Why is it that the children of tall parents tend to be tall, but not as tall as their parents? 
 * Why do children of short parents tend to be short, but not as short as their parents?
@@ -61,7 +60,6 @@ myPlot <- function(x, y) {
 }
 ```
 
-
 ---
 ## Plot the data, code
 ```
@@ -75,7 +73,6 @@ abline(h = 0); abline(v = 0) # reference lines for no relathionship
 ---
 ## Plot the data, results
 <div class="rimage center"><img src="fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" class="plot" /></div>
-
 
 ---
 ## Discussion
